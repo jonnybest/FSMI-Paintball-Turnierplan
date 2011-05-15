@@ -2,6 +2,7 @@
 
 // A team
 sig Team {}{
+
 }
 
 // all teams are playing
@@ -40,9 +41,13 @@ sig Game {
 	field : one Field,
 	busy : set Team
 }{
+	// ref is no playing team
 	referee not in contestants
+	// only two playing teams
 	#contestants = 2
+	// busy is an alias
 	busy = contestants + referee
+	// make sure we have the right round
 	this in round.games
 }
 
@@ -50,12 +55,17 @@ sig Round {
 	games : set Game,
 	pausing : set Team
 }{
-	all f :pausing | f not in games.*busy
+	// paused teams are not allowed to play
+	all x :pausing | x not in games.busy
+	// a field can only be used once per round
+	//no f1, f2 : games.field | f1 = f2 // WTF!!
+	// a team can only be busy once per Round
+	//no t1, t2 : games.busy | t1 = t2
 }
 
 // a game can only happen in one round
 fact restrictGametoRound {
-	all g:Game | (one r: Round | g in r.games)
+	//all g:Game | (one r: Round | g in r.games)
 }
 
 assert fieldnum { 
@@ -63,12 +73,14 @@ assert fieldnum {
  }
 check fieldnum for 10
 
-// define size
+// define sizes
 fact {
-	# Team = 3
+	// # Team = 3
 	# Game = #Team
 }
 
-pred turnierplan {}
+pred turnierplan {
+	
+}
 
-run turnierplan for 3 Team, 3 Game, 3 Round
+run turnierplan for exactly 3 Team, 5 Game, 5 Round
