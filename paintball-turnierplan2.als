@@ -26,13 +26,16 @@ one sig Woodland extends Map {
 }
 
 // A Team is a Team is a Team
-sig Team {}
+sig Team {}{
+	// a team needs to play some time!
+	this in Match.contestants
+}
 // eine runde ist ein Block auf dem Spielplan
 sig Round {
 	match : some Match
 } {
 	this = match.round
-	#match > 1
+	// #match > 0
 }
 // ein match ist ein spiel, team gegen team
 sig Match {
@@ -46,11 +49,16 @@ sig Match {
 	ref not in contestants
 }
 
-// jedes team 
-fact everyteamplays {
-	Match.contestants -> Match.contestants = Team -> Team
+// jedes team fact
+fact {
+	all a,b : Team | some m:Match | a + b in m.contestants
 }
-//check everyteamplays for 10
+
+// jedes team test
+assert everyteamplays {
+	all a,b : Team | some m : Match | a->b in m.contestants -> m.contestants
+}
+check everyteamplays for 10
 
 assert guess {
 	#Match >= #Team
@@ -75,4 +83,4 @@ fact maps {
 
 pred Test {}
 
-run Test for exactly 13 Team, 10 Round, 13 Match
+run Test for exactly 6 Team, 15 Round, 15 Match
