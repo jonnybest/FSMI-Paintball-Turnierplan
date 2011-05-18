@@ -83,4 +83,4 @@ fact maps {
 
 pred Test {}
 
-run Test for exactly 6 Team, 15 Round, 15 Match
+run Test for exactly 6 Team, 8 Round, 15 Match
