@@ -46,6 +46,17 @@ sig Match {
 	ref not in contestants
 }
 
+// jedes team 
+fact everyteamplays {
+	Match.contestants -> Match.contestants = Team -> Team
+}
+//check everyteamplays for 10
+
+assert guess {
+	#Match >= #Team
+}
+check guess for 15
+
 // kein team zweimal busy in der selben runde
 fact nodoublebooking {
 	// keine refs zweimal buchen
