@@ -94,11 +94,11 @@ fact maps {
 // jedes Team sollte jedes Feld einmal bespielt haben
 fact mapskind {
 	(Match.map -> Match.contestants) = (Map -> Team)
-	all t: Team, m: Map | let x =  #(contestants.t :> map.m) | { 1 < x && x < 6 }
+	all t: Team, m: Map | let x =  #(contestants.t :> map.m) | { 1 < x && x < 5 }
 }
 
 assert mapscount {
-	all t: Team, m: Map | let x =  #(contestants.t :> map.m) | { 1 < x && x < 4 }
+	all t: Team, m: contestants.t.map | 1 < #(contestants.t.map :> m -> contestants.t)
 	//no m: Map, t: Match.contestants | 1 < #(m->t)
 }
 check mapscount for 5 int, 10 Team, 20 Round, 50 Match
@@ -112,4 +112,4 @@ pred Test {}
 //run Test for exactly 10 Team, 14 Round, exactly 45 Match
 //run Test for exactly 11 Team, 14 Round, exactly 55 Match
 //run Test for exactly 12 Team, 14 Round, exactly 66 Match
-run Test for 5 int, exactly 13 Team, exactly 21 Round, exactly 78 Match
+run Test for 5 int, exactly 13 Team, exactly 20 Round, exactly 78 Match
