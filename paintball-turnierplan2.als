@@ -37,7 +37,6 @@ sig Round {
 } {
 	this = match.round
 	all t: pause | t not in match.contestants + match.ref
-	// #match > 0
 }
 // ein match ist ein spiel, team gegen team
 sig Match {
@@ -53,10 +52,8 @@ sig Match {
 
 // alle teams machen ungefähr gleich viel pause
 fact evenPauseTime {
-	//#pause.Team > 1
 	all t: Team | 1 < #pause.t && #pause.t < 4
 }
-//check evenPauseTime for 10
 
 // jedes team fact spielt gegen jedes andere
 fact {
@@ -81,15 +78,11 @@ fact nodoublebooking {
 	// keine spieler zweimal buchen
 	all r: Round, m : r.match, t : m.contestants | t not in (r.match - m).ref + (r.match - m).contestants
 }
-//check nodoublebooking for exactly 6 Team, 6 Match, 6 Round
 
 // jedes Feld nur einmal pro Runde
 fact maps {
-	//lone r : Round | (r -> r.games.map) in (Round -> Field) 
-	//no m : Match | (m.round -> m.field) in (Match - m).round -> Field
 	all r : Round, m : r.match | m.map not in (r.match - m).map
 }
-// check maps for exactly 3 Match, 2 Round, 1 Team
 
 // jedes Team sollte jedes Feld einmal bespielt haben
 fact mapskind {
@@ -97,19 +90,6 @@ fact mapskind {
 	all t: Team, m: Map | let x =  #(contestants.t :> map.m) | { 1 < x && x < 5 }
 }
 
-assert mapscount {
-	all t: Team, m: contestants.t.map | 1 < #(contestants.t.map :> m -> contestants.t)
-	//no m: Map, t: Match.contestants | 1 < #(m->t)
-}
-check mapscount for 5 int, 10 Team, 20 Round, 50 Match
-
 pred Test {}
 
-//run Test for exactly 6 Team, 14 Round, exactly 16 Match
-//run Test for exactly 7 Team, 14 Round, exactly 21 Match
-//run Test for exactly 8 Team, 21 Round, exactly 28 Match
-//run Test for exactly 9 Team, 14 Round, exactly 36 Match
-//run Test for exactly 10 Team, 14 Round, exactly 45 Match
-//run Test for exactly 11 Team, 14 Round, exactly 55 Match
-//run Test for exactly 12 Team, 14 Round, exactly 66 Match
-run Test for 5 int, exactly 13 Team, exactly 20 Round, exactly 78 Match
+run Test for 5 int, exactly 13 Team, exactly 21 Round, exactly 78 Match
