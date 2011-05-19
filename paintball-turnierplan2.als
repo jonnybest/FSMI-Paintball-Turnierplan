@@ -32,11 +32,9 @@ sig Team {}{
 }
 // eine runde ist ein Block auf dem Spielplan
 sig Round {
-	match : some Match,
-	pause : some Team
+	match : some Match
 } {
 	this = match.round
-	all t: pause | t not in match.contestants + match.ref
 	// #match > 0
 }
 // ein match ist ein spiel, team gegen team
@@ -51,19 +49,12 @@ sig Match {
 	ref not in contestants
 }
 
-// alle teams machen ungefähr gleich viel pause
-fact evenPauseTime {
-	//#pause.Team > 1
-	all t: Team | 1 < #pause.t && #pause.t < 4
-}
-//check evenPauseTime for 10
-
-// jedes team fact spielt gegen jedes andere
+// jedes team fact
 fact {
 	all a,b : Team | some m:Match | a + b in m.contestants
 }
 
-// jedes team spielt jeden geges andere-test
+// jedes team test
 assert everyteamplays {
 	all a,b : Team | some m : Match | a->b in m.contestants -> m.contestants
 }
@@ -78,7 +69,6 @@ check guess for 15
 fact nodoublebooking {
 	// keine refs zweimal buchen
 	all r: Round, m : r.match | m.ref not in (r.match - m).ref + (r.match - m).contestants
-	// keine spieler zweimal buchen
 	all r: Round, m : r.match, t : m.contestants | t not in (r.match - m).ref + (r.match - m).contestants
 }
 //check nodoublebooking for exactly 6 Team, 6 Match, 6 Round
@@ -91,25 +81,6 @@ fact maps {
 }
 // check maps for exactly 3 Match, 2 Round, 1 Team
 
-// jedes Team sollte jedes Feld einmal bespielt haben
-fact mapskind {
-	(Match.map -> Match.contestants) = (Map -> Team)
-}
-//check mapskind for 8
-
-assert fillrounds {
-	 no r : Round | 0 < #(r.match)
-	// not for 9, 10
-}
-check fillrounds for exactly 6 Team, 14 Round, exactly 16 Match
-
 pred Test {}
 
-//run Test for exactly 6 Team, 14 Round, exactly 16 Match
-//run Test for exactly 7 Team, 14 Round, exactly 21 Match
-run Test for exactly 8 Team, 21 Round, exactly 28 Match
-//run Test for exactly 9 Team, 14 Round, exactly 36 Match
-//run Test for exactly 10 Team, 14 Round, exactly 45 Match
-//run Test for exactly 11 Team, 14 Round, exactly 55 Match
-//run Test for exactly 12 Team, 14 Round, exactly 66 Match
-//run Test for exactly 13 Team, exactly 21 Round, exactly 78 Match
+run Test for exactly 13 Team, exactly 21 Round, exactly 78 Match

@@ -1,0 +1,691 @@
+<alloy builddate="2011-05-09 16:50 EDT">
+
+<instance bitwidth="5" maxseq="4" command="Run Test for 5 int, exactly 13 Team, exactly 21 Round, exactly 78 Match" filename="\\Lithium\Homes\best\My Documents\fsmipb\paintball-turnierplan7-germanium.als">
+
+<sig label="seq/Int" ID="0" parentID="1" builtin="yes">
+</sig>
+
+<sig label="Int" ID="1" parentID="2" builtin="yes">
+</sig>
+
+<sig label="String" ID="3" parentID="2" builtin="yes">
+</sig>
+
+<sig label="this/Hyperball" ID="4" parentID="5" one="yes">
+   <atom label="Hyperball$0"/>
+</sig>
+
+<sig label="this/Speedball" ID="6" parentID="5" one="yes">
+   <atom label="Speedball$0"/>
+</sig>
+
+<sig label="this/Tactical" ID="7" parentID="5" one="yes">
+   <atom label="Tactical$0"/>
+</sig>
+
+<sig label="this/Woodland" ID="8" parentID="5" one="yes">
+   <atom label="Woodland$0"/>
+</sig>
+
+<sig label="this/Map" ID="5" parentID="2" abstract="yes">
+</sig>
+
+<field label="type" ID="9" parentID="5">
+   <tuple> <atom label="Hyperball$0"/> <atom label="0"/> </tuple>
+   <tuple> <atom label="Speedball$0"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="Tactical$0"/> <atom label="0"/> </tuple>
+   <tuple> <atom label="Woodland$0"/> <atom label="1"/> </tuple>
+   <types> <type ID="5"/> <type ID="1"/> </types>
+</field>
+
+<sig label="this/Team" ID="10" parentID="2">
+   <atom label="Team$0"/>
+   <atom label="Team$1"/>
+   <atom label="Team$2"/>
+   <atom label="Team$3"/>
+   <atom label="Team$4"/>
+   <atom label="Team$5"/>
+   <atom label="Team$6"/>
+   <atom label="Team$7"/>
+   <atom label="Team$8"/>
+   <atom label="Team$9"/>
+   <atom label="Team$10"/>
+   <atom label="Team$11"/>
+   <atom label="Team$12"/>
+</sig>
+
+<sig label="this/Round" ID="11" parentID="2">
+   <atom label="Round$0"/>
+   <atom label="Round$1"/>
+   <atom label="Round$2"/>
+   <atom label="Round$3"/>
+   <atom label="Round$4"/>
+   <atom label="Round$5"/>
+   <atom label="Round$6"/>
+   <atom label="Round$7"/>
+   <atom label="Round$8"/>
+   <atom label="Round$9"/>
+   <atom label="Round$10"/>
+   <atom label="Round$11"/>
+   <atom label="Round$12"/>
+   <atom label="Round$13"/>
+   <atom label="Round$14"/>
+   <atom label="Round$15"/>
+   <atom label="Round$16"/>
+   <atom label="Round$17"/>
+   <atom label="Round$18"/>
+   <atom label="Round$19"/>
+   <atom label="Round$20"/>
+</sig>
+
+<field label="match" ID="12" parentID="11">
+   <tuple> <atom label="Round$0"/> <atom label="Match$32"/> </tuple>
+   <tuple> <atom label="Round$0"/> <atom label="Match$36"/> </tuple>
+   <tuple> <atom label="Round$0"/> <atom label="Match$61"/> </tuple>
+   <tuple> <atom label="Round$0"/> <atom label="Match$71"/> </tuple>
+   <tuple> <atom label="Round$1"/> <atom label="Match$31"/> </tuple>
+   <tuple> <atom label="Round$1"/> <atom label="Match$51"/> </tuple>
+   <tuple> <atom label="Round$1"/> <atom label="Match$59"/> </tuple>
+   <tuple> <atom label="Round$1"/> <atom label="Match$67"/> </tuple>
+   <tuple> <atom label="Round$2"/> <atom label="Match$29"/> </tuple>
+   <tuple> <atom label="Round$2"/> <atom label="Match$47"/> </tuple>
+   <tuple> <atom label="Round$2"/> <atom label="Match$72"/> </tuple>
+   <tuple> <atom label="Round$3"/> <atom label="Match$28"/> </tuple>
+   <tuple> <atom label="Round$3"/> <atom label="Match$39"/> </tuple>
+   <tuple> <atom label="Round$4"/> <atom label="Match$25"/> </tuple>
+   <tuple> <atom label="Round$4"/> <atom label="Match$42"/> </tuple>
+   <tuple> <atom label="Round$4"/> <atom label="Match$45"/> </tuple>
+   <tuple> <atom label="Round$4"/> <atom label="Match$63"/> </tuple>
+   <tuple> <atom label="Round$5"/> <atom label="Match$24"/> </tuple>
+   <tuple> <atom label="Round$5"/> <atom label="Match$34"/> </tuple>
+   <tuple> <atom label="Round$5"/> <atom label="Match$65"/> </tuple>
+   <tuple> <atom label="Round$5"/> <atom label="Match$66"/> </tuple>
+   <tuple> <atom label="Round$6"/> <atom label="Match$23"/> </tuple>
+   <tuple> <atom label="Round$6"/> <atom label="Match$40"/> </tuple>
+   <tuple> <atom label="Round$6"/> <atom label="Match$48"/> </tuple>
+   <tuple> <atom label="Round$6"/> <atom label="Match$56"/> </tuple>
+   <tuple> <atom label="Round$7"/> <atom label="Match$21"/> </tuple>
+   <tuple> <atom label="Round$7"/> <atom label="Match$50"/> </tuple>
+   <tuple> <atom label="Round$7"/> <atom label="Match$64"/> </tuple>
+   <tuple> <atom label="Round$7"/> <atom label="Match$69"/> </tuple>
+   <tuple> <atom label="Round$8"/> <atom label="Match$20"/> </tuple>
+   <tuple> <atom label="Round$8"/> <atom label="Match$46"/> </tuple>
+   <tuple> <atom label="Round$8"/> <atom label="Match$70"/> </tuple>
+   <tuple> <atom label="Round$9"/> <atom label="Match$14"/> </tuple>
+   <tuple> <atom label="Round$9"/> <atom label="Match$27"/> </tuple>
+   <tuple> <atom label="Round$9"/> <atom label="Match$30"/> </tuple>
+   <tuple> <atom label="Round$9"/> <atom label="Match$58"/> </tuple>
+   <tuple> <atom label="Round$10"/> <atom label="Match$13"/> </tuple>
+   <tuple> <atom label="Round$10"/> <atom label="Match$19"/> </tuple>
+   <tuple> <atom label="Round$10"/> <atom label="Match$22"/> </tuple>
+   <tuple> <atom label="Round$10"/> <atom label="Match$44"/> </tuple>
+   <tuple> <atom label="Round$11"/> <atom label="Match$11"/> </tuple>
+   <tuple> <atom label="Round$11"/> <atom label="Match$15"/> </tuple>
+   <tuple> <atom label="Round$11"/> <atom label="Match$38"/> </tuple>
+   <tuple> <atom label="Round$11"/> <atom label="Match$62"/> </tuple>
+   <tuple> <atom label="Round$12"/> <atom label="Match$10"/> </tuple>
+   <tuple> <atom label="Round$12"/> <atom label="Match$35"/> </tuple>
+   <tuple> <atom label="Round$12"/> <atom label="Match$54"/> </tuple>
+   <tuple> <atom label="Round$12"/> <atom label="Match$57"/> </tuple>
+   <tuple> <atom label="Round$13"/> <atom label="Match$8"/> </tuple>
+   <tuple> <atom label="Round$13"/> <atom label="Match$16"/> </tuple>
+   <tuple> <atom label="Round$13"/> <atom label="Match$41"/> </tuple>
+   <tuple> <atom label="Round$13"/> <atom label="Match$52"/> </tuple>
+   <tuple> <atom label="Round$14"/> <atom label="Match$6"/> </tuple>
+   <tuple> <atom label="Round$14"/> <atom label="Match$68"/> </tuple>
+   <tuple> <atom label="Round$15"/> <atom label="Match$5"/> </tuple>
+   <tuple> <atom label="Round$15"/> <atom label="Match$26"/> </tuple>
+   <tuple> <atom label="Round$15"/> <atom label="Match$37"/> </tuple>
+   <tuple> <atom label="Round$15"/> <atom label="Match$77"/> </tuple>
+   <tuple> <atom label="Round$16"/> <atom label="Match$4"/> </tuple>
+   <tuple> <atom label="Round$16"/> <atom label="Match$53"/> </tuple>
+   <tuple> <atom label="Round$16"/> <atom label="Match$55"/> </tuple>
+   <tuple> <atom label="Round$16"/> <atom label="Match$75"/> </tuple>
+   <tuple> <atom label="Round$17"/> <atom label="Match$3"/> </tuple>
+   <tuple> <atom label="Round$17"/> <atom label="Match$7"/> </tuple>
+   <tuple> <atom label="Round$17"/> <atom label="Match$12"/> </tuple>
+   <tuple> <atom label="Round$17"/> <atom label="Match$74"/> </tuple>
+   <tuple> <atom label="Round$18"/> <atom label="Match$2"/> </tuple>
+   <tuple> <atom label="Round$18"/> <atom label="Match$9"/> </tuple>
+   <tuple> <atom label="Round$18"/> <atom label="Match$60"/> </tuple>
+   <tuple> <atom label="Round$18"/> <atom label="Match$76"/> </tuple>
+   <tuple> <atom label="Round$19"/> <atom label="Match$1"/> </tuple>
+   <tuple> <atom label="Round$19"/> <atom label="Match$18"/> </tuple>
+   <tuple> <atom label="Round$19"/> <atom label="Match$33"/> </tuple>
+   <tuple> <atom label="Round$19"/> <atom label="Match$43"/> </tuple>
+   <tuple> <atom label="Round$20"/> <atom label="Match$0"/> </tuple>
+   <tuple> <atom label="Round$20"/> <atom label="Match$17"/> </tuple>
+   <tuple> <atom label="Round$20"/> <atom label="Match$49"/> </tuple>
+   <tuple> <atom label="Round$20"/> <atom label="Match$73"/> </tuple>
+   <types> <type ID="11"/> <type ID="13"/> </types>
+</field>
+
+<field label="pause" ID="14" parentID="11">
+   <tuple> <atom label="Round$0"/> <atom label="Team$9"/> </tuple>
+   <tuple> <atom label="Round$1"/> <atom label="Team$10"/> </tuple>
+   <tuple> <atom label="Round$2"/> <atom label="Team$12"/> </tuple>
+   <tuple> <atom label="Round$3"/> <atom label="Team$2"/> </tuple>
+   <tuple> <atom label="Round$4"/> <atom label="Team$11"/> </tuple>
+   <tuple> <atom label="Round$5"/> <atom label="Team$8"/> </tuple>
+   <tuple> <atom label="Round$6"/> <atom label="Team$12"/> </tuple>
+   <tuple> <atom label="Round$7"/> <atom label="Team$11"/> </tuple>
+   <tuple> <atom label="Round$8"/> <atom label="Team$9"/> </tuple>
+   <tuple> <atom label="Round$9"/> <atom label="Team$3"/> </tuple>
+   <tuple> <atom label="Round$10"/> <atom label="Team$10"/> </tuple>
+   <tuple> <atom label="Round$11"/> <atom label="Team$8"/> </tuple>
+   <tuple> <atom label="Round$12"/> <atom label="Team$0"/> </tuple>
+   <tuple> <atom label="Round$13"/> <atom label="Team$4"/> </tuple>
+   <tuple> <atom label="Round$14"/> <atom label="Team$1"/> </tuple>
+   <tuple> <atom label="Round$14"/> <atom label="Team$2"/> </tuple>
+   <tuple> <atom label="Round$14"/> <atom label="Team$3"/> </tuple>
+   <tuple> <atom label="Round$14"/> <atom label="Team$4"/> </tuple>
+   <tuple> <atom label="Round$14"/> <atom label="Team$5"/> </tuple>
+   <tuple> <atom label="Round$14"/> <atom label="Team$6"/> </tuple>
+   <tuple> <atom label="Round$14"/> <atom label="Team$7"/> </tuple>
+   <tuple> <atom label="Round$15"/> <atom label="Team$2"/> </tuple>
+   <tuple> <atom label="Round$16"/> <atom label="Team$6"/> </tuple>
+   <tuple> <atom label="Round$17"/> <atom label="Team$1"/> </tuple>
+   <tuple> <atom label="Round$18"/> <atom label="Team$5"/> </tuple>
+   <tuple> <atom label="Round$19"/> <atom label="Team$0"/> </tuple>
+   <tuple> <atom label="Round$20"/> <atom label="Team$7"/> </tuple>
+   <types> <type ID="11"/> <type ID="10"/> </types>
+</field>
+
+<sig label="this/Match" ID="13" parentID="2">
+   <atom label="Match$0"/>
+   <atom label="Match$1"/>
+   <atom label="Match$2"/>
+   <atom label="Match$3"/>
+   <atom label="Match$4"/>
+   <atom label="Match$5"/>
+   <atom label="Match$6"/>
+   <atom label="Match$7"/>
+   <atom label="Match$8"/>
+   <atom label="Match$9"/>
+   <atom label="Match$10"/>
+   <atom label="Match$11"/>
+   <atom label="Match$12"/>
+   <atom label="Match$13"/>
+   <atom label="Match$14"/>
+   <atom label="Match$15"/>
+   <atom label="Match$16"/>
+   <atom label="Match$17"/>
+   <atom label="Match$18"/>
+   <atom label="Match$19"/>
+   <atom label="Match$20"/>
+   <atom label="Match$21"/>
+   <atom label="Match$22"/>
+   <atom label="Match$23"/>
+   <atom label="Match$24"/>
+   <atom label="Match$25"/>
+   <atom label="Match$26"/>
+   <atom label="Match$27"/>
+   <atom label="Match$28"/>
+   <atom label="Match$29"/>
+   <atom label="Match$30"/>
+   <atom label="Match$31"/>
+   <atom label="Match$32"/>
+   <atom label="Match$33"/>
+   <atom label="Match$34"/>
+   <atom label="Match$35"/>
+   <atom label="Match$36"/>
+   <atom label="Match$37"/>
+   <atom label="Match$38"/>
+   <atom label="Match$39"/>
+   <atom label="Match$40"/>
+   <atom label="Match$41"/>
+   <atom label="Match$42"/>
+   <atom label="Match$43"/>
+   <atom label="Match$44"/>
+   <atom label="Match$45"/>
+   <atom label="Match$46"/>
+   <atom label="Match$47"/>
+   <atom label="Match$48"/>
+   <atom label="Match$49"/>
+   <atom label="Match$50"/>
+   <atom label="Match$51"/>
+   <atom label="Match$52"/>
+   <atom label="Match$53"/>
+   <atom label="Match$54"/>
+   <atom label="Match$55"/>
+   <atom label="Match$56"/>
+   <atom label="Match$57"/>
+   <atom label="Match$58"/>
+   <atom label="Match$59"/>
+   <atom label="Match$60"/>
+   <atom label="Match$61"/>
+   <atom label="Match$62"/>
+   <atom label="Match$63"/>
+   <atom label="Match$64"/>
+   <atom label="Match$65"/>
+   <atom label="Match$66"/>
+   <atom label="Match$67"/>
+   <atom label="Match$68"/>
+   <atom label="Match$69"/>
+   <atom label="Match$70"/>
+   <atom label="Match$71"/>
+   <atom label="Match$72"/>
+   <atom label="Match$73"/>
+   <atom label="Match$74"/>
+   <atom label="Match$75"/>
+   <atom label="Match$76"/>
+   <atom label="Match$77"/>
+</sig>
+
+<field label="round" ID="15" parentID="13">
+   <tuple> <atom label="Match$0"/> <atom label="Round$20"/> </tuple>
+   <tuple> <atom label="Match$1"/> <atom label="Round$19"/> </tuple>
+   <tuple> <atom label="Match$2"/> <atom label="Round$18"/> </tuple>
+   <tuple> <atom label="Match$3"/> <atom label="Round$17"/> </tuple>
+   <tuple> <atom label="Match$4"/> <atom label="Round$16"/> </tuple>
+   <tuple> <atom label="Match$5"/> <atom label="Round$15"/> </tuple>
+   <tuple> <atom label="Match$6"/> <atom label="Round$14"/> </tuple>
+   <tuple> <atom label="Match$7"/> <atom label="Round$17"/> </tuple>
+   <tuple> <atom label="Match$8"/> <atom label="Round$13"/> </tuple>
+   <tuple> <atom label="Match$9"/> <atom label="Round$18"/> </tuple>
+   <tuple> <atom label="Match$10"/> <atom label="Round$12"/> </tuple>
+   <tuple> <atom label="Match$11"/> <atom label="Round$11"/> </tuple>
+   <tuple> <atom label="Match$12"/> <atom label="Round$17"/> </tuple>
+   <tuple> <atom label="Match$13"/> <atom label="Round$10"/> </tuple>
+   <tuple> <atom label="Match$14"/> <atom label="Round$9"/> </tuple>
+   <tuple> <atom label="Match$15"/> <atom label="Round$11"/> </tuple>
+   <tuple> <atom label="Match$16"/> <atom label="Round$13"/> </tuple>
+   <tuple> <atom label="Match$17"/> <atom label="Round$20"/> </tuple>
+   <tuple> <atom label="Match$18"/> <atom label="Round$19"/> </tuple>
+   <tuple> <atom label="Match$19"/> <atom label="Round$10"/> </tuple>
+   <tuple> <atom label="Match$20"/> <atom label="Round$8"/> </tuple>
+   <tuple> <atom label="Match$21"/> <atom label="Round$7"/> </tuple>
+   <tuple> <atom label="Match$22"/> <atom label="Round$10"/> </tuple>
+   <tuple> <atom label="Match$23"/> <atom label="Round$6"/> </tuple>
+   <tuple> <atom label="Match$24"/> <atom label="Round$5"/> </tuple>
+   <tuple> <atom label="Match$25"/> <atom label="Round$4"/> </tuple>
+   <tuple> <atom label="Match$26"/> <atom label="Round$15"/> </tuple>
+   <tuple> <atom label="Match$27"/> <atom label="Round$9"/> </tuple>
+   <tuple> <atom label="Match$28"/> <atom label="Round$3"/> </tuple>
+   <tuple> <atom label="Match$29"/> <atom label="Round$2"/> </tuple>
+   <tuple> <atom label="Match$30"/> <atom label="Round$9"/> </tuple>
+   <tuple> <atom label="Match$31"/> <atom label="Round$1"/> </tuple>
+   <tuple> <atom label="Match$32"/> <atom label="Round$0"/> </tuple>
+   <tuple> <atom label="Match$33"/> <atom label="Round$19"/> </tuple>
+   <tuple> <atom label="Match$34"/> <atom label="Round$5"/> </tuple>
+   <tuple> <atom label="Match$35"/> <atom label="Round$12"/> </tuple>
+   <tuple> <atom label="Match$36"/> <atom label="Round$0"/> </tuple>
+   <tuple> <atom label="Match$37"/> <atom label="Round$15"/> </tuple>
+   <tuple> <atom label="Match$38"/> <atom label="Round$11"/> </tuple>
+   <tuple> <atom label="Match$39"/> <atom label="Round$3"/> </tuple>
+   <tuple> <atom label="Match$40"/> <atom label="Round$6"/> </tuple>
+   <tuple> <atom label="Match$41"/> <atom label="Round$13"/> </tuple>
+   <tuple> <atom label="Match$42"/> <atom label="Round$4"/> </tuple>
+   <tuple> <atom label="Match$43"/> <atom label="Round$19"/> </tuple>
+   <tuple> <atom label="Match$44"/> <atom label="Round$10"/> </tuple>
+   <tuple> <atom label="Match$45"/> <atom label="Round$4"/> </tuple>
+   <tuple> <atom label="Match$46"/> <atom label="Round$8"/> </tuple>
+   <tuple> <atom label="Match$47"/> <atom label="Round$2"/> </tuple>
+   <tuple> <atom label="Match$48"/> <atom label="Round$6"/> </tuple>
+   <tuple> <atom label="Match$49"/> <atom label="Round$20"/> </tuple>
+   <tuple> <atom label="Match$50"/> <atom label="Round$7"/> </tuple>
+   <tuple> <atom label="Match$51"/> <atom label="Round$1"/> </tuple>
+   <tuple> <atom label="Match$52"/> <atom label="Round$13"/> </tuple>
+   <tuple> <atom label="Match$53"/> <atom label="Round$16"/> </tuple>
+   <tuple> <atom label="Match$54"/> <atom label="Round$12"/> </tuple>
+   <tuple> <atom label="Match$55"/> <atom label="Round$16"/> </tuple>
+   <tuple> <atom label="Match$56"/> <atom label="Round$6"/> </tuple>
+   <tuple> <atom label="Match$57"/> <atom label="Round$12"/> </tuple>
+   <tuple> <atom label="Match$58"/> <atom label="Round$9"/> </tuple>
+   <tuple> <atom label="Match$59"/> <atom label="Round$1"/> </tuple>
+   <tuple> <atom label="Match$60"/> <atom label="Round$18"/> </tuple>
+   <tuple> <atom label="Match$61"/> <atom label="Round$0"/> </tuple>
+   <tuple> <atom label="Match$62"/> <atom label="Round$11"/> </tuple>
+   <tuple> <atom label="Match$63"/> <atom label="Round$4"/> </tuple>
+   <tuple> <atom label="Match$64"/> <atom label="Round$7"/> </tuple>
+   <tuple> <atom label="Match$65"/> <atom label="Round$5"/> </tuple>
+   <tuple> <atom label="Match$66"/> <atom label="Round$5"/> </tuple>
+   <tuple> <atom label="Match$67"/> <atom label="Round$1"/> </tuple>
+   <tuple> <atom label="Match$68"/> <atom label="Round$14"/> </tuple>
+   <tuple> <atom label="Match$69"/> <atom label="Round$7"/> </tuple>
+   <tuple> <atom label="Match$70"/> <atom label="Round$8"/> </tuple>
+   <tuple> <atom label="Match$71"/> <atom label="Round$0"/> </tuple>
+   <tuple> <atom label="Match$72"/> <atom label="Round$2"/> </tuple>
+   <tuple> <atom label="Match$73"/> <atom label="Round$20"/> </tuple>
+   <tuple> <atom label="Match$74"/> <atom label="Round$17"/> </tuple>
+   <tuple> <atom label="Match$75"/> <atom label="Round$16"/> </tuple>
+   <tuple> <atom label="Match$76"/> <atom label="Round$18"/> </tuple>
+   <tuple> <atom label="Match$77"/> <atom label="Round$15"/> </tuple>
+   <types> <type ID="13"/> <type ID="11"/> </types>
+</field>
+
+<field label="contestants" ID="16" parentID="13">
+   <tuple> <atom label="Match$0"/> <atom label="Team$11"/> </tuple>
+   <tuple> <atom label="Match$0"/> <atom label="Team$12"/> </tuple>
+   <tuple> <atom label="Match$1"/> <atom label="Team$10"/> </tuple>
+   <tuple> <atom label="Match$1"/> <atom label="Team$12"/> </tuple>
+   <tuple> <atom label="Match$2"/> <atom label="Team$10"/> </tuple>
+   <tuple> <atom label="Match$2"/> <atom label="Team$11"/> </tuple>
+   <tuple> <atom label="Match$3"/> <atom label="Team$9"/> </tuple>
+   <tuple> <atom label="Match$3"/> <atom label="Team$12"/> </tuple>
+   <tuple> <atom label="Match$4"/> <atom label="Team$9"/> </tuple>
+   <tuple> <atom label="Match$4"/> <atom label="Team$11"/> </tuple>
+   <tuple> <atom label="Match$5"/> <atom label="Team$9"/> </tuple>
+   <tuple> <atom label="Match$5"/> <atom label="Team$10"/> </tuple>
+   <tuple> <atom label="Match$6"/> <atom label="Team$8"/> </tuple>
+   <tuple> <atom label="Match$6"/> <atom label="Team$12"/> </tuple>
+   <tuple> <atom label="Match$7"/> <atom label="Team$8"/> </tuple>
+   <tuple> <atom label="Match$7"/> <atom label="Team$11"/> </tuple>
+   <tuple> <atom label="Match$8"/> <atom label="Team$8"/> </tuple>
+   <tuple> <atom label="Match$8"/> <atom label="Team$10"/> </tuple>
+   <tuple> <atom label="Match$9"/> <atom label="Team$8"/> </tuple>
+   <tuple> <atom label="Match$9"/> <atom label="Team$9"/> </tuple>
+   <tuple> <atom label="Match$10"/> <atom label="Team$7"/> </tuple>
+   <tuple> <atom label="Match$10"/> <atom label="Team$12"/> </tuple>
+   <tuple> <atom label="Match$11"/> <atom label="Team$7"/> </tuple>
+   <tuple> <atom label="Match$11"/> <atom label="Team$11"/> </tuple>
+   <tuple> <atom label="Match$12"/> <atom label="Team$7"/> </tuple>
+   <tuple> <atom label="Match$12"/> <atom label="Team$10"/> </tuple>
+   <tuple> <atom label="Match$13"/> <atom label="Team$7"/> </tuple>
+   <tuple> <atom label="Match$13"/> <atom label="Team$9"/> </tuple>
+   <tuple> <atom label="Match$14"/> <atom label="Team$7"/> </tuple>
+   <tuple> <atom label="Match$14"/> <atom label="Team$8"/> </tuple>
+   <tuple> <atom label="Match$15"/> <atom label="Team$6"/> </tuple>
+   <tuple> <atom label="Match$15"/> <atom label="Team$12"/> </tuple>
+   <tuple> <atom label="Match$16"/> <atom label="Team$6"/> </tuple>
+   <tuple> <atom label="Match$16"/> <atom label="Team$11"/> </tuple>
+   <tuple> <atom label="Match$17"/> <atom label="Team$6"/> </tuple>
+   <tuple> <atom label="Match$17"/> <atom label="Team$10"/> </tuple>
+   <tuple> <atom label="Match$18"/> <atom label="Team$6"/> </tuple>
+   <tuple> <atom label="Match$18"/> <atom label="Team$9"/> </tuple>
+   <tuple> <atom label="Match$19"/> <atom label="Team$6"/> </tuple>
+   <tuple> <atom label="Match$19"/> <atom label="Team$8"/> </tuple>
+   <tuple> <atom label="Match$20"/> <atom label="Team$6"/> </tuple>
+   <tuple> <atom label="Match$20"/> <atom label="Team$7"/> </tuple>
+   <tuple> <atom label="Match$21"/> <atom label="Team$5"/> </tuple>
+   <tuple> <atom label="Match$21"/> <atom label="Team$12"/> </tuple>
+   <tuple> <atom label="Match$22"/> <atom label="Team$5"/> </tuple>
+   <tuple> <atom label="Match$22"/> <atom label="Team$11"/> </tuple>
+   <tuple> <atom label="Match$23"/> <atom label="Team$5"/> </tuple>
+   <tuple> <atom label="Match$23"/> <atom label="Team$10"/> </tuple>
+   <tuple> <atom label="Match$24"/> <atom label="Team$5"/> </tuple>
+   <tuple> <atom label="Match$24"/> <atom label="Team$9"/> </tuple>
+   <tuple> <atom label="Match$25"/> <atom label="Team$5"/> </tuple>
+   <tuple> <atom label="Match$25"/> <atom label="Team$8"/> </tuple>
+   <tuple> <atom label="Match$26"/> <atom label="Team$5"/> </tuple>
+   <tuple> <atom label="Match$26"/> <atom label="Team$7"/> </tuple>
+   <tuple> <atom label="Match$27"/> <atom label="Team$5"/> </tuple>
+   <tuple> <atom label="Match$27"/> <atom label="Team$6"/> </tuple>
+   <tuple> <atom label="Match$28"/> <atom label="Team$4"/> </tuple>
+   <tuple> <atom label="Match$28"/> <atom label="Team$12"/> </tuple>
+   <tuple> <atom label="Match$29"/> <atom label="Team$4"/> </tuple>
+   <tuple> <atom label="Match$29"/> <atom label="Team$11"/> </tuple>
+   <tuple> <atom label="Match$30"/> <atom label="Team$4"/> </tuple>
+   <tuple> <atom label="Match$30"/> <atom label="Team$10"/> </tuple>
+   <tuple> <atom label="Match$31"/> <atom label="Team$4"/> </tuple>
+   <tuple> <atom label="Match$31"/> <atom label="Team$9"/> </tuple>
+   <tuple> <atom label="Match$32"/> <atom label="Team$4"/> </tuple>
+   <tuple> <atom label="Match$32"/> <atom label="Team$8"/> </tuple>
+   <tuple> <atom label="Match$33"/> <atom label="Team$4"/> </tuple>
+   <tuple> <atom label="Match$33"/> <atom label="Team$7"/> </tuple>
+   <tuple> <atom label="Match$34"/> <atom label="Team$4"/> </tuple>
+   <tuple> <atom label="Match$34"/> <atom label="Team$6"/> </tuple>
+   <tuple> <atom label="Match$35"/> <atom label="Team$4"/> </tuple>
+   <tuple> <atom label="Match$35"/> <atom label="Team$5"/> </tuple>
+   <tuple> <atom label="Match$36"/> <atom label="Team$3"/> </tuple>
+   <tuple> <atom label="Match$36"/> <atom label="Team$12"/> </tuple>
+   <tuple> <atom label="Match$37"/> <atom label="Team$3"/> </tuple>
+   <tuple> <atom label="Match$37"/> <atom label="Team$11"/> </tuple>
+   <tuple> <atom label="Match$38"/> <atom label="Team$3"/> </tuple>
+   <tuple> <atom label="Match$38"/> <atom label="Team$10"/> </tuple>
+   <tuple> <atom label="Match$39"/> <atom label="Team$3"/> </tuple>
+   <tuple> <atom label="Match$39"/> <atom label="Team$9"/> </tuple>
+   <tuple> <atom label="Match$40"/> <atom label="Team$3"/> </tuple>
+   <tuple> <atom label="Match$40"/> <atom label="Team$8"/> </tuple>
+   <tuple> <atom label="Match$41"/> <atom label="Team$3"/> </tuple>
+   <tuple> <atom label="Match$41"/> <atom label="Team$7"/> </tuple>
+   <tuple> <atom label="Match$42"/> <atom label="Team$3"/> </tuple>
+   <tuple> <atom label="Match$42"/> <atom label="Team$6"/> </tuple>
+   <tuple> <atom label="Match$43"/> <atom label="Team$3"/> </tuple>
+   <tuple> <atom label="Match$43"/> <atom label="Team$5"/> </tuple>
+   <tuple> <atom label="Match$44"/> <atom label="Team$3"/> </tuple>
+   <tuple> <atom label="Match$44"/> <atom label="Team$4"/> </tuple>
+   <tuple> <atom label="Match$45"/> <atom label="Team$2"/> </tuple>
+   <tuple> <atom label="Match$45"/> <atom label="Team$12"/> </tuple>
+   <tuple> <atom label="Match$46"/> <atom label="Team$2"/> </tuple>
+   <tuple> <atom label="Match$46"/> <atom label="Team$11"/> </tuple>
+   <tuple> <atom label="Match$47"/> <atom label="Team$2"/> </tuple>
+   <tuple> <atom label="Match$47"/> <atom label="Team$10"/> </tuple>
+   <tuple> <atom label="Match$48"/> <atom label="Team$2"/> </tuple>
+   <tuple> <atom label="Match$48"/> <atom label="Team$9"/> </tuple>
+   <tuple> <atom label="Match$49"/> <atom label="Team$2"/> </tuple>
+   <tuple> <atom label="Match$49"/> <atom label="Team$8"/> </tuple>
+   <tuple> <atom label="Match$50"/> <atom label="Team$2"/> </tuple>
+   <tuple> <atom label="Match$50"/> <atom label="Team$7"/> </tuple>
+   <tuple> <atom label="Match$51"/> <atom label="Team$2"/> </tuple>
+   <tuple> <atom label="Match$51"/> <atom label="Team$6"/> </tuple>
+   <tuple> <atom label="Match$52"/> <atom label="Team$2"/> </tuple>
+   <tuple> <atom label="Match$52"/> <atom label="Team$5"/> </tuple>
+   <tuple> <atom label="Match$53"/> <atom label="Team$2"/> </tuple>
+   <tuple> <atom label="Match$53"/> <atom label="Team$4"/> </tuple>
+   <tuple> <atom label="Match$54"/> <atom label="Team$2"/> </tuple>
+   <tuple> <atom label="Match$54"/> <atom label="Team$3"/> </tuple>
+   <tuple> <atom label="Match$55"/> <atom label="Team$1"/> </tuple>
+   <tuple> <atom label="Match$55"/> <atom label="Team$12"/> </tuple>
+   <tuple> <atom label="Match$56"/> <atom label="Team$1"/> </tuple>
+   <tuple> <atom label="Match$56"/> <atom label="Team$11"/> </tuple>
+   <tuple> <atom label="Match$57"/> <atom label="Team$1"/> </tuple>
+   <tuple> <atom label="Match$57"/> <atom label="Team$10"/> </tuple>
+   <tuple> <atom label="Match$58"/> <atom label="Team$1"/> </tuple>
+   <tuple> <atom label="Match$58"/> <atom label="Team$9"/> </tuple>
+   <tuple> <atom label="Match$59"/> <atom label="Team$1"/> </tuple>
+   <tuple> <atom label="Match$59"/> <atom label="Team$8"/> </tuple>
+   <tuple> <atom label="Match$60"/> <atom label="Team$1"/> </tuple>
+   <tuple> <atom label="Match$60"/> <atom label="Team$7"/> </tuple>
+   <tuple> <atom label="Match$61"/> <atom label="Team$1"/> </tuple>
+   <tuple> <atom label="Match$61"/> <atom label="Team$6"/> </tuple>
+   <tuple> <atom label="Match$62"/> <atom label="Team$1"/> </tuple>
+   <tuple> <atom label="Match$62"/> <atom label="Team$5"/> </tuple>
+   <tuple> <atom label="Match$63"/> <atom label="Team$1"/> </tuple>
+   <tuple> <atom label="Match$63"/> <atom label="Team$4"/> </tuple>
+   <tuple> <atom label="Match$64"/> <atom label="Team$1"/> </tuple>
+   <tuple> <atom label="Match$64"/> <atom label="Team$3"/> </tuple>
+   <tuple> <atom label="Match$65"/> <atom label="Team$1"/> </tuple>
+   <tuple> <atom label="Match$65"/> <atom label="Team$2"/> </tuple>
+   <tuple> <atom label="Match$66"/> <atom label="Team$0"/> </tuple>
+   <tuple> <atom label="Match$66"/> <atom label="Team$12"/> </tuple>
+   <tuple> <atom label="Match$67"/> <atom label="Team$0"/> </tuple>
+   <tuple> <atom label="Match$67"/> <atom label="Team$11"/> </tuple>
+   <tuple> <atom label="Match$68"/> <atom label="Team$0"/> </tuple>
+   <tuple> <atom label="Match$68"/> <atom label="Team$10"/> </tuple>
+   <tuple> <atom label="Match$69"/> <atom label="Team$0"/> </tuple>
+   <tuple> <atom label="Match$69"/> <atom label="Team$9"/> </tuple>
+   <tuple> <atom label="Match$70"/> <atom label="Team$0"/> </tuple>
+   <tuple> <atom label="Match$70"/> <atom label="Team$8"/> </tuple>
+   <tuple> <atom label="Match$71"/> <atom label="Team$0"/> </tuple>
+   <tuple> <atom label="Match$71"/> <atom label="Team$7"/> </tuple>
+   <tuple> <atom label="Match$72"/> <atom label="Team$0"/> </tuple>
+   <tuple> <atom label="Match$72"/> <atom label="Team$6"/> </tuple>
+   <tuple> <atom label="Match$73"/> <atom label="Team$0"/> </tuple>
+   <tuple> <atom label="Match$73"/> <atom label="Team$5"/> </tuple>
+   <tuple> <atom label="Match$74"/> <atom label="Team$0"/> </tuple>
+   <tuple> <atom label="Match$74"/> <atom label="Team$4"/> </tuple>
+   <tuple> <atom label="Match$75"/> <atom label="Team$0"/> </tuple>
+   <tuple> <atom label="Match$75"/> <atom label="Team$3"/> </tuple>
+   <tuple> <atom label="Match$76"/> <atom label="Team$0"/> </tuple>
+   <tuple> <atom label="Match$76"/> <atom label="Team$2"/> </tuple>
+   <tuple> <atom label="Match$77"/> <atom label="Team$0"/> </tuple>
+   <tuple> <atom label="Match$77"/> <atom label="Team$1"/> </tuple>
+   <types> <type ID="13"/> <type ID="10"/> </types>
+</field>
+
+<field label="ref" ID="17" parentID="13">
+   <tuple> <atom label="Match$0"/> <atom label="Team$1"/> </tuple>
+   <tuple> <atom label="Match$1"/> <atom label="Team$2"/> </tuple>
+   <tuple> <atom label="Match$2"/> <atom label="Team$12"/> </tuple>
+   <tuple> <atom label="Match$3"/> <atom label="Team$2"/> </tuple>
+   <tuple> <atom label="Match$4"/> <atom label="Team$10"/> </tuple>
+   <tuple> <atom label="Match$5"/> <atom label="Team$6"/> </tuple>
+   <tuple> <atom label="Match$6"/> <atom label="Team$9"/> </tuple>
+   <tuple> <atom label="Match$7"/> <atom label="Team$5"/> </tuple>
+   <tuple> <atom label="Match$8"/> <atom label="Team$9"/> </tuple>
+   <tuple> <atom label="Match$9"/> <atom label="Team$6"/> </tuple>
+   <tuple> <atom label="Match$10"/> <atom label="Team$11"/> </tuple>
+   <tuple> <atom label="Match$11"/> <atom label="Team$4"/> </tuple>
+   <tuple> <atom label="Match$12"/> <atom label="Team$6"/> </tuple>
+   <tuple> <atom label="Match$13"/> <atom label="Team$0"/> </tuple>
+   <tuple> <atom label="Match$14"/> <atom label="Team$12"/> </tuple>
+   <tuple> <atom label="Match$15"/> <atom label="Team$9"/> </tuple>
+   <tuple> <atom label="Match$16"/> <atom label="Team$12"/> </tuple>
+   <tuple> <atom label="Match$17"/> <atom label="Team$9"/> </tuple>
+   <tuple> <atom label="Match$18"/> <atom label="Team$8"/> </tuple>
+   <tuple> <atom label="Match$19"/> <atom label="Team$1"/> </tuple>
+   <tuple> <atom label="Match$20"/> <atom label="Team$1"/> </tuple>
+   <tuple> <atom label="Match$21"/> <atom label="Team$10"/> </tuple>
+   <tuple> <atom label="Match$22"/> <atom label="Team$12"/> </tuple>
+   <tuple> <atom label="Match$23"/> <atom label="Team$0"/> </tuple>
+   <tuple> <atom label="Match$24"/> <atom label="Team$3"/> </tuple>
+   <tuple> <atom label="Match$25"/> <atom label="Team$10"/> </tuple>
+   <tuple> <atom label="Match$26"/> <atom label="Team$8"/> </tuple>
+   <tuple> <atom label="Match$27"/> <atom label="Team$11"/> </tuple>
+   <tuple> <atom label="Match$28"/> <atom label="Team$11"/> </tuple>
+   <tuple> <atom label="Match$29"/> <atom label="Team$7"/> </tuple>
+   <tuple> <atom label="Match$30"/> <atom label="Team$2"/> </tuple>
+   <tuple> <atom label="Match$31"/> <atom label="Team$3"/> </tuple>
+   <tuple> <atom label="Match$32"/> <atom label="Team$11"/> </tuple>
+   <tuple> <atom label="Match$33"/> <atom label="Team$1"/> </tuple>
+   <tuple> <atom label="Match$34"/> <atom label="Team$10"/> </tuple>
+   <tuple> <atom label="Match$35"/> <atom label="Team$8"/> </tuple>
+   <tuple> <atom label="Match$36"/> <atom label="Team$10"/> </tuple>
+   <tuple> <atom label="Match$37"/> <atom label="Team$12"/> </tuple>
+   <tuple> <atom label="Match$38"/> <atom label="Team$2"/> </tuple>
+   <tuple> <atom label="Match$39"/> <atom label="Team$5"/> </tuple>
+   <tuple> <atom label="Match$40"/> <atom label="Team$4"/> </tuple>
+   <tuple> <atom label="Match$41"/> <atom label="Team$0"/> </tuple>
+   <tuple> <atom label="Match$42"/> <atom label="Team$7"/> </tuple>
+   <tuple> <atom label="Match$43"/> <atom label="Team$11"/> </tuple>
+   <tuple> <atom label="Match$44"/> <atom label="Team$2"/> </tuple>
+   <tuple> <atom label="Match$45"/> <atom label="Team$9"/> </tuple>
+   <tuple> <atom label="Match$46"/> <atom label="Team$10"/> </tuple>
+   <tuple> <atom label="Match$47"/> <atom label="Team$3"/> </tuple>
+   <tuple> <atom label="Match$48"/> <atom label="Team$6"/> </tuple>
+   <tuple> <atom label="Match$49"/> <atom label="Team$4"/> </tuple>
+   <tuple> <atom label="Match$50"/> <atom label="Team$6"/> </tuple>
+   <tuple> <atom label="Match$51"/> <atom label="Team$12"/> </tuple>
+   <tuple> <atom label="Match$52"/> <atom label="Team$1"/> </tuple>
+   <tuple> <atom label="Match$53"/> <atom label="Team$5"/> </tuple>
+   <tuple> <atom label="Match$54"/> <atom label="Team$9"/> </tuple>
+   <tuple> <atom label="Match$55"/> <atom label="Team$8"/> </tuple>
+   <tuple> <atom label="Match$56"/> <atom label="Team$7"/> </tuple>
+   <tuple> <atom label="Match$57"/> <atom label="Team$6"/> </tuple>
+   <tuple> <atom label="Match$58"/> <atom label="Team$0"/> </tuple>
+   <tuple> <atom label="Match$59"/> <atom label="Team$7"/> </tuple>
+   <tuple> <atom label="Match$60"/> <atom label="Team$4"/> </tuple>
+   <tuple> <atom label="Match$61"/> <atom label="Team$5"/> </tuple>
+   <tuple> <atom label="Match$62"/> <atom label="Team$0"/> </tuple>
+   <tuple> <atom label="Match$63"/> <atom label="Team$0"/> </tuple>
+   <tuple> <atom label="Match$64"/> <atom label="Team$4"/> </tuple>
+   <tuple> <atom label="Match$65"/> <atom label="Team$7"/> </tuple>
+   <tuple> <atom label="Match$66"/> <atom label="Team$11"/> </tuple>
+   <tuple> <atom label="Match$67"/> <atom label="Team$5"/> </tuple>
+   <tuple> <atom label="Match$68"/> <atom label="Team$11"/> </tuple>
+   <tuple> <atom label="Match$69"/> <atom label="Team$8"/> </tuple>
+   <tuple> <atom label="Match$70"/> <atom label="Team$3"/> </tuple>
+   <tuple> <atom label="Match$71"/> <atom label="Team$2"/> </tuple>
+   <tuple> <atom label="Match$72"/> <atom label="Team$1"/> </tuple>
+   <tuple> <atom label="Match$73"/> <atom label="Team$3"/> </tuple>
+   <tuple> <atom label="Match$74"/> <atom label="Team$3"/> </tuple>
+   <tuple> <atom label="Match$75"/> <atom label="Team$7"/> </tuple>
+   <tuple> <atom label="Match$76"/> <atom label="Team$3"/> </tuple>
+   <tuple> <atom label="Match$77"/> <atom label="Team$4"/> </tuple>
+   <types> <type ID="13"/> <type ID="10"/> </types>
+</field>
+
+<field label="map" ID="18" parentID="13">
+   <tuple> <atom label="Match$0"/> <atom label="Woodland$0"/> </tuple>
+   <tuple> <atom label="Match$1"/> <atom label="Tactical$0"/> </tuple>
+   <tuple> <atom label="Match$2"/> <atom label="Tactical$0"/> </tuple>
+   <tuple> <atom label="Match$3"/> <atom label="Speedball$0"/> </tuple>
+   <tuple> <atom label="Match$4"/> <atom label="Speedball$0"/> </tuple>
+   <tuple> <atom label="Match$5"/> <atom label="Hyperball$0"/> </tuple>
+   <tuple> <atom label="Match$6"/> <atom label="Speedball$0"/> </tuple>
+   <tuple> <atom label="Match$7"/> <atom label="Tactical$0"/> </tuple>
+   <tuple> <atom label="Match$8"/> <atom label="Speedball$0"/> </tuple>
+   <tuple> <atom label="Match$9"/> <atom label="Speedball$0"/> </tuple>
+   <tuple> <atom label="Match$10"/> <atom label="Woodland$0"/> </tuple>
+   <tuple> <atom label="Match$11"/> <atom label="Tactical$0"/> </tuple>
+   <tuple> <atom label="Match$12"/> <atom label="Hyperball$0"/> </tuple>
+   <tuple> <atom label="Match$13"/> <atom label="Speedball$0"/> </tuple>
+   <tuple> <atom label="Match$14"/> <atom label="Woodland$0"/> </tuple>
+   <tuple> <atom label="Match$15"/> <atom label="Woodland$0"/> </tuple>
+   <tuple> <atom label="Match$16"/> <atom label="Tactical$0"/> </tuple>
+   <tuple> <atom label="Match$17"/> <atom label="Tactical$0"/> </tuple>
+   <tuple> <atom label="Match$18"/> <atom label="Woodland$0"/> </tuple>
+   <tuple> <atom label="Match$19"/> <atom label="Hyperball$0"/> </tuple>
+   <tuple> <atom label="Match$20"/> <atom label="Woodland$0"/> </tuple>
+   <tuple> <atom label="Match$21"/> <atom label="Hyperball$0"/> </tuple>
+   <tuple> <atom label="Match$22"/> <atom label="Woodland$0"/> </tuple>
+   <tuple> <atom label="Match$23"/> <atom label="Woodland$0"/> </tuple>
+   <tuple> <atom label="Match$24"/> <atom label="Tactical$0"/> </tuple>
+   <tuple> <atom label="Match$25"/> <atom label="Woodland$0"/> </tuple>
+   <tuple> <atom label="Match$26"/> <atom label="Tactical$0"/> </tuple>
+   <tuple> <atom label="Match$27"/> <atom label="Tactical$0"/> </tuple>
+   <tuple> <atom label="Match$28"/> <atom label="Woodland$0"/> </tuple>
+   <tuple> <atom label="Match$29"/> <atom label="Hyperball$0"/> </tuple>
+   <tuple> <atom label="Match$30"/> <atom label="Speedball$0"/> </tuple>
+   <tuple> <atom label="Match$31"/> <atom label="Woodland$0"/> </tuple>
+   <tuple> <atom label="Match$32"/> <atom label="Speedball$0"/> </tuple>
+   <tuple> <atom label="Match$33"/> <atom label="Speedball$0"/> </tuple>
+   <tuple> <atom label="Match$34"/> <atom label="Hyperball$0"/> </tuple>
+   <tuple> <atom label="Match$35"/> <atom label="Speedball$0"/> </tuple>
+   <tuple> <atom label="Match$36"/> <atom label="Tactical$0"/> </tuple>
+   <tuple> <atom label="Match$37"/> <atom label="Woodland$0"/> </tuple>
+   <tuple> <atom label="Match$38"/> <atom label="Hyperball$0"/> </tuple>
+   <tuple> <atom label="Match$39"/> <atom label="Speedball$0"/> </tuple>
+   <tuple> <atom label="Match$40"/> <atom label="Tactical$0"/> </tuple>
+   <tuple> <atom label="Match$41"/> <atom label="Hyperball$0"/> </tuple>
+   <tuple> <atom label="Match$42"/> <atom label="Tactical$0"/> </tuple>
+   <tuple> <atom label="Match$43"/> <atom label="Hyperball$0"/> </tuple>
+   <tuple> <atom label="Match$44"/> <atom label="Tactical$0"/> </tuple>
+   <tuple> <atom label="Match$45"/> <atom label="Speedball$0"/> </tuple>
+   <tuple> <atom label="Match$46"/> <atom label="Tactical$0"/> </tuple>
+   <tuple> <atom label="Match$47"/> <atom label="Woodland$0"/> </tuple>
+   <tuple> <atom label="Match$48"/> <atom label="Hyperball$0"/> </tuple>
+   <tuple> <atom label="Match$49"/> <atom label="Speedball$0"/> </tuple>
+   <tuple> <atom label="Match$50"/> <atom label="Woodland$0"/> </tuple>
+   <tuple> <atom label="Match$51"/> <atom label="Speedball$0"/> </tuple>
+   <tuple> <atom label="Match$52"/> <atom label="Woodland$0"/> </tuple>
+   <tuple> <atom label="Match$53"/> <atom label="Tactical$0"/> </tuple>
+   <tuple> <atom label="Match$54"/> <atom label="Hyperball$0"/> </tuple>
+   <tuple> <atom label="Match$55"/> <atom label="Hyperball$0"/> </tuple>
+   <tuple> <atom label="Match$56"/> <atom label="Speedball$0"/> </tuple>
+   <tuple> <atom label="Match$57"/> <atom label="Tactical$0"/> </tuple>
+   <tuple> <atom label="Match$58"/> <atom label="Hyperball$0"/> </tuple>
+   <tuple> <atom label="Match$59"/> <atom label="Tactical$0"/> </tuple>
+   <tuple> <atom label="Match$60"/> <atom label="Hyperball$0"/> </tuple>
+   <tuple> <atom label="Match$61"/> <atom label="Woodland$0"/> </tuple>
+   <tuple> <atom label="Match$62"/> <atom label="Speedball$0"/> </tuple>
+   <tuple> <atom label="Match$63"/> <atom label="Hyperball$0"/> </tuple>
+   <tuple> <atom label="Match$64"/> <atom label="Speedball$0"/> </tuple>
+   <tuple> <atom label="Match$65"/> <atom label="Woodland$0"/> </tuple>
+   <tuple> <atom label="Match$66"/> <atom label="Speedball$0"/> </tuple>
+   <tuple> <atom label="Match$67"/> <atom label="Hyperball$0"/> </tuple>
+   <tuple> <atom label="Match$68"/> <atom label="Tactical$0"/> </tuple>
+   <tuple> <atom label="Match$69"/> <atom label="Tactical$0"/> </tuple>
+   <tuple> <atom label="Match$70"/> <atom label="Hyperball$0"/> </tuple>
+   <tuple> <atom label="Match$71"/> <atom label="Hyperball$0"/> </tuple>
+   <tuple> <atom label="Match$72"/> <atom label="Speedball$0"/> </tuple>
+   <tuple> <atom label="Match$73"/> <atom label="Hyperball$0"/> </tuple>
+   <tuple> <atom label="Match$74"/> <atom label="Woodland$0"/> </tuple>
+   <tuple> <atom label="Match$75"/> <atom label="Woodland$0"/> </tuple>
+   <tuple> <atom label="Match$76"/> <atom label="Woodland$0"/> </tuple>
+   <tuple> <atom label="Match$77"/> <atom label="Speedball$0"/> </tuple>
+   <types> <type ID="13"/> <type ID="5"/> </types>
+</field>
+
+<sig label="univ" ID="2" builtin="yes">
+</sig>
+
+</instance>
+
+<source filename="\\Lithium\Homes\best\My Documents\fsmipb\paintball-turnierplan7-germanium.als" content="// zweiter Ansatz f&#x00fc;rs PB dings&#x000a;&#x000a;// A field&#x000a;abstract sig Map {&#x0009;&#x000a;&#x0009;type : one Int&#x000a;}{&#x000a;&#x0009;type in 0+1&#x000a;}&#x000a;&#x000a;// our fields in Haguenau&#x000a;one sig Hyperball  extends Map {&#x000a;}{&#x000a;&#x0009;type = 0&#x000a;}&#x000a;one sig Speedball extends Map {&#x000a;}{&#x000a;&#x0009;type = 1&#x000a;}&#x000a;one sig Tactical extends Map {&#x000a;}{&#x000a;&#x0009;type = 0&#x000a;}&#x000a;one sig Woodland extends Map {&#x000a;}{&#x000a;&#x0009;type = 1&#x000a;}&#x000a;&#x000a;// A Team is a Team is a Team&#x000a;sig Team {}{&#x000a;&#x0009;// a team needs to play some time!&#x000a;&#x0009;this in Match.contestants&#x000a;}&#x000a;// eine runde ist ein Block auf dem Spielplan&#x000a;sig Round {&#x000a;&#x0009;match : some Match,&#x000a;&#x0009;pause : some Team&#x000a;} {&#x000a;&#x0009;this = match.round&#x000a;&#x0009;all t: pause | t not in match.contestants + match.ref&#x000a;&#x0009;// #match &gt; 0&#x000a;}&#x000a;// ein match ist ein spiel, team gegen team&#x000a;sig Match {&#x000a;&#x0009;round : one Round,&#x000a;&#x0009;contestants : set Team,&#x000a;&#x0009;ref : one Team,&#x000a;&#x0009;map : one Map&#x000a;}{&#x000a;&#x0009;this in round.match&#x000a;&#x0009;2 = #contestants&#x000a;&#x0009;ref not in contestants&#x000a;}&#x000a;&#x000a;// alle teams machen ungef&#x00e4;hr gleich viel pause&#x000a;fact evenPauseTime {&#x000a;&#x0009;//#pause.Team &gt; 1&#x000a;&#x0009;all t: Team | 1 &lt; #pause.t &amp;&amp; #pause.t &lt; 4&#x000a;}&#x000a;//check evenPauseTime for 10&#x000a;&#x000a;// jedes team fact spielt gegen jedes andere&#x000a;fact {&#x000a;&#x0009;all a,b : Team | some m:Match | a + b in m.contestants&#x000a;}&#x000a;&#x000a;// jedes team spielt jeden geges andere-test&#x000a;assert everyteamplays {&#x000a;&#x0009;all a,b : Team | some m : Match | a-&gt;b in m.contestants -&gt; m.contestants&#x000a;}&#x000a;check everyteamplays for 10&#x000a;&#x000a;assert guess {&#x000a;&#x0009;#Match &gt;= #Team&#x000a;}&#x000a;check guess for 15&#x000a;&#x000a;// kein team zweimal busy in der selben runde&#x000a;fact nodoublebooking {&#x000a;&#x0009;// keine refs zweimal buchen&#x000a;&#x0009;all r: Round, m : r.match | m.ref not in (r.match - m).ref + (r.match - m).contestants&#x000a;&#x0009;// keine spieler zweimal buchen&#x000a;&#x0009;all r: Round, m : r.match, t : m.contestants | t not in (r.match - m).ref + (r.match - m).contestants&#x000a;}&#x000a;//check nodoublebooking for exactly 6 Team, 6 Match, 6 Round&#x000a;&#x000a;// jedes Feld nur einmal pro Runde&#x000a;fact maps {&#x000a;&#x0009;//lone r : Round | (r -&gt; r.games.map) in (Round -&gt; Field) &#x000a;&#x0009;//no m : Match | (m.round -&gt; m.field) in (Match - m).round -&gt; Field&#x000a;&#x0009;all r : Round, m : r.match | m.map not in (r.match - m).map&#x000a;}&#x000a;// check maps for exactly 3 Match, 2 Round, 1 Team&#x000a;&#x000a;// jedes Team sollte jedes Feld einmal bespielt haben&#x000a;fact mapskind {&#x000a;&#x0009;(Match.map -&gt; Match.contestants) = (Map -&gt; Team)&#x000a;&#x0009;all t: Team, m: Map | let x =  #(contestants.t :&gt; map.m) | { 1 &lt; x &amp;&amp; x &lt; 6 }&#x000a;}&#x000a;&#x000a;assert mapscount {&#x000a;&#x0009;all t: Team, m: Map | let x =  #(contestants.t :&gt; map.m) | { 1 &lt; x &amp;&amp; x &lt; 4 }&#x000a;&#x0009;//no m: Map, t: Match.contestants | 1 &lt; #(m-&gt;t)&#x000a;}&#x000a;check mapscount for 5 int, 10 Team, 20 Round, 50 Match&#x000a;&#x000a;pred Test {}&#x000a;&#x000a;//run Test for exactly 6 Team, 14 Round, exactly 16 Match&#x000a;//run Test for exactly 7 Team, 14 Round, exactly 21 Match&#x000a;//run Test for exactly 8 Team, 21 Round, exactly 28 Match&#x000a;//run Test for exactly 9 Team, 14 Round, exactly 36 Match&#x000a;//run Test for exactly 10 Team, 14 Round, exactly 45 Match&#x000a;//run Test for exactly 11 Team, 14 Round, exactly 55 Match&#x000a;//run Test for exactly 12 Team, 14 Round, exactly 66 Match&#x000a;run Test for 5 int, exactly 13 Team, exactly 21 Round, exactly 78 Match&#x000a;"/>
+
+<source filename="\$alloy4$\models\util\integer.als" content="module util/integer&#x000a;&#x000a;/*&#x000a; * A collection of utility functions for using Integers in Alloy.&#x000a; * Note that integer overflows are silently truncated to the current bitwidth&#x000a; * using the 2&apos;s complement arithmetic.&#x000a; */&#x000a;&#x000a;fun add  [n1, n2: Int] : Int { this/plus[n1, n2] }&#x000a;fun plus [n1, n2: Int] : Int { n1 fun/add n2 }&#x000a;&#x000a;fun sub   [n1, n2: Int] : Int { this/minus[n1, n2] }&#x000a;fun minus [n1, n2: Int] : Int { n1 fun/sub n2 }&#x000a;&#x000a;fun mul [n1, n2: Int] : Int { n1 fun/mul n2 }&#x000a;&#x000a;// Performs the division with &quot;round to zero&quot; semantics, except the following 3 cases&#x000a;// 1) if a is 0, then it returns 0&#x000a;// 2) else if b is 0, then it returns 1 if a is negative and -1 if a is positive&#x000a;// 3) else if a is the smallest negative integer, and b is -1, then it returns a&#x000a;fun div [n1, n2: Int] : Int { n1 fun/div n2 }&#x000a;&#x000a;// answer is defined to be the unique integer that satisfies &quot;a = ((a/b)*b) + remainder&quot;&#x000a;fun rem [n1, n2: Int] : Int { n1 fun/rem n2 }&#x000a;&#x000a;/* negate */&#x000a;fun negate [n: Int] : Int { 0 fun/sub n }&#x000a;&#x000a;/* equal to */&#x000a;pred eq [n1, n2: Int] { int[n1] = int[n2] }&#x000a;&#x000a;/* greater than */&#x000a;pred gt [n1, n2: Int] { n1 &gt; n2 }&#x000a;&#x000a;/* less then */&#x000a;pred lt [n1, n2: Int] { n1 &lt; n2 }&#x000a;&#x000a;/* greater than or equal */&#x000a;pred gte [n1, n2: Int] { n1 &gt;= n2 }&#x000a;&#x000a;/* less than or equal */&#x000a;pred lte [n1, n2: Int] { n1 &lt;= n2 }&#x000a;&#x000a;/* integer is zero */&#x000a;pred zero [n: Int] { n = 0 }&#x000a;&#x000a;/* positive */&#x000a;pred pos  [n: Int] { n &gt; 0 }&#x000a;&#x000a;/* negative */&#x000a;pred neg  [n: Int] { n &lt; 0 }&#x000a;&#x000a;/* non-positive */&#x000a;pred nonpos [n: Int] { n &lt;= 0 }&#x000a;&#x000a;/* non-negative */&#x000a;pred nonneg [n: Int] { n &gt;= 0 }&#x000a;&#x000a;/* signum (aka sign or sgn) */&#x000a;fun signum [n: Int] : Int { n&lt;0 =&gt; (0 fun/sub 1) else (n&gt;0 =&gt; 1 else 0) }&#x000a;&#x000a;/*&#x000a; * returns the ith element (zero-based) from the set s&#x000a; * in the ordering of &apos;next&apos;, which is a linear ordering&#x000a; * relation like that provided by util/ordering&#x000a; */&#x000a;fun int2elem[i: Int, next: univ-&gt;univ, s: set univ] : lone s {&#x000a;  {e: s | #^next.e = int i }&#x000a;}&#x000a;&#x000a;/*&#x000a; * returns the index of the element (zero-based) in the&#x000a; * ordering of next, which is a linear ordering relation&#x000a; * like that provided by util/ordering&#x000a; */&#x000a;fun elem2int[e: univ, next: univ-&gt;univ] : lone Int {&#x000a;  Int[#^next.e]&#x000a;}&#x000a;&#x000a;// returns the largest integer in the current bitwidth&#x000a;fun max:one Int { fun/max }&#x000a;&#x000a;// returns the smallest integer in the current bitwidth&#x000a;fun min:one Int { fun/min }&#x000a;&#x000a;// maps each integer (except max) to the integer after it&#x000a;fun next:Int-&gt;Int { fun/next }&#x000a;&#x000a;// maps each integer (except min) to the integer before it&#x000a;fun prev:Int-&gt;Int { ~next }&#x000a;&#x000a;// given a set of integers, return the largest element&#x000a;fun max [es: set Int]: lone Int { es - es.^prev }&#x000a;&#x000a;// given a set of integers, return the smallest element&#x000a;fun min [es: set Int]: lone Int { es - es.^next }&#x000a;&#x000a;// given an integer, return all integers prior to it&#x000a;fun prevs [e: Int]: set Int { e.^prev }&#x000a;&#x000a;// given an integer, return all integers following it&#x000a;fun nexts [e: Int]: set Int { e.^next }&#x000a;&#x000a;// returns the larger of the two integers&#x000a;fun larger [e1, e2: Int]: Int { let a=int[e1], b=int[e2] | (a&lt;b =&gt; b else a) }&#x000a;&#x000a;// returns the smaller of the two integers&#x000a;fun smaller [e1, e2: Int]: Int { let a=int[e1], b=int[e2] | (a&lt;b =&gt; a else b) }&#x000a;"/>
+
+</alloy>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
