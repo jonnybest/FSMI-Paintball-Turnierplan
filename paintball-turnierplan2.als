@@ -97,10 +97,17 @@ fact mapskind {
 }
 //check mapskind for 8
 
+assert fillrounds {
+	 no r : Round | 0 < #(r.match)
+	// not for 9, 10
+}
+check fillrounds for exactly 6 Team, 14 Round, exactly 16 Match
+
 pred Test {}
 
-run Test for exactly 7 Team, 14 Round, exactly 21 Match
-//run Test for exactly 8 Team, 14 Round, exactly 28 Match
+//run Test for exactly 6 Team, 14 Round, exactly 16 Match
+//run Test for exactly 7 Team, 14 Round, exactly 21 Match
+run Test for exactly 8 Team, 21 Round, exactly 28 Match
 //run Test for exactly 9 Team, 14 Round, exactly 36 Match
 //run Test for exactly 10 Team, 14 Round, exactly 45 Match
 //run Test for exactly 11 Team, 14 Round, exactly 55 Match
