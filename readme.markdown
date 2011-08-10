@@ -1,4 +1,5 @@
-﻿# Turnierplangenerator
+Paintball-﻿Turnierplangenerator
+====================
 für vier Felder und zwei Spielmodi
 
 ## Autor
