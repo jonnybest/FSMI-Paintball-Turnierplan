@@ -1,4 +1,11 @@
-// zweiter Ansatz fürs PB dings
+// # Turnierplangenerator
+// für vier Felder und zwei Spielmodi
+// 
+// ## Autor
+// Erstellt von [Jonathan Best](http://jonathanbest.de/) 
+// für die [Fachschaft Mathe/Info am KIT](http://fsmi.uni-karlsruhe.de/) im April 2011
+// und das Paintball-Feld in [Haguenau](http://www.paintball-haguenau.com/de/)
+
 
 // A field
 abstract sig Map {	
@@ -64,12 +71,12 @@ fact {
 assert everyteamplays {
 	all a,b : Team | some m : Match | a->b in m.contestants -> m.contestants
 }
-check everyteamplays for 10
+//check everyteamplays for 10
 
 assert guess {
 	#Match >= #Team
 }
-check guess for 15
+//check guess for 15
 
 // kein team zweimal busy in der selben runde
 fact nodoublebooking {
